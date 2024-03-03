@@ -1,0 +1,124 @@
+/* Smooth scrolling for the entire page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Top bar styling */
+.topbar {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    justify-content: space-between;
+    width: 100%;
+    height: 72px;
+    left: 0;
+    top: 0;
+    background: #ffffff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* Remove focus outline for buttons */
+.btn:focus, .form-control:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Logo styling */
+.logo {
+    display: initial;
+    width: 180px;
+    margin: 15px 0 0 3%;
+    font-size: xx-large;
+    font-weight: 300;
+    color: #5C5D5D;
+}
+
+/* Custom label styles */
+.celabel, .celabel2 {
+    margin-left: 15%;
+}
+
+/* Container for main content */
+.whole {
+    margin: 20px 15% 0;
+}
+
+/* Divider styling */
+.dividerhr {
+    margin: 0 15%;
+}
+
+/* Container for left and right content */
+.wholeleft {
+    margin-left: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wholeright {
+    margin-right: 17.5%;
+    width: 243px;
+}
+
+/* Close button positioning */
+.closebtn {
+    left: 70%;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 1600px) {
+    .celabel, .celabel2 {
+        margin-left: 11.25%;
+    }
+    .whole, .dividerhr, .wholeleft {
+        margin: 0 11.25%;
+    }
+    .wholeright {
+        margin-right: 13.125%;
+    }
+    .closebtn {
+        left: 75%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .celabel, .celabel2 {
+        margin-left: 8%;
+    }
+    .whole, .dividerhr, .wholeleft {
+        margin: 0 7.5%;
+    }
+    .wholeright {
+        margin-right: 8.75%;
+    }
+    .closebtn {
+        left: 82%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .celabel, .celabel2 {
+        margin-left: 3.75%;
+    }
+    .whole, .dividerhr, .wholeleft {
+        margin: 0 3.75%;
+    }
+    .wholeright {
+        margin-right: 4.375%;
+    }
+    .closebtn {
+        left: 88%;
+    }
+    .modal-dialog {
+        max-width: 750px !important;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .whole, .dividerhr, .wholeleft {
+        margin: 0;
+    }
+    .wholeright {
+        margin-right: 0;
+    }
+}
