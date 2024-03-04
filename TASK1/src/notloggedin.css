@@ -1,9 +1,8 @@
-/* Smooth scrolling for the entire page */
+
 html {
     scroll-behavior: smooth;
 }
 
-/* Top bar styling */
 .topbar {
     display: flex;
     position: fixed;
@@ -17,13 +16,13 @@ html {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
 }
 
-/* Remove focus outline for buttons */
+
 .btn:focus, .form-control:focus {
     outline: none !important;
     box-shadow: none !important;
 }
 
-/* Logo styling */
+
 .logo {
     display: initial;
     width: 180px;
@@ -33,22 +32,22 @@ html {
     color: #5C5D5D;
 }
 
-/* Custom label styles */
+
 .celabel, .celabel2 {
     margin-left: 15%;
 }
 
-/* Container for main content */
+
 .whole {
     margin: 20px 15% 0;
 }
 
-/* Divider styling */
+
 .dividerhr {
     margin: 0 15%;
 }
 
-/* Container for left and right content */
+
 .wholeleft {
     margin-left: 15%;
     display: flex;
@@ -60,12 +59,10 @@ html {
     width: 243px;
 }
 
-/* Close button positioning */
 .closebtn {
     left: 70%;
 }
 
-/* Media queries for responsiveness */
 @media screen and (max-width: 1600px) {
     .celabel, .celabel2 {
         margin-left: 11.25%;
